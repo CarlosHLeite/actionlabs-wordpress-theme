@@ -1,28 +1,30 @@
-<section class="home-posts container teste">
+<section class="posts-grid-section">
 
-    <div class="posts-grid">
+    <div class="container">
 
-        <?php
+        <div class="posts-grid">
 
+            <?php
             $query = new WP_Query([
-            'post_type' => 'post',
-            'posts_per_page' => 6
+                'post_type' => 'post',
+                'posts_per_page' => 6,
+                'order' => 'ASC',
             ]);
 
-            if($query->have_posts()) :
+            if ($query->have_posts()) :
+                while ($query->have_posts()) :
+                    $query->the_post();
 
-                while($query->have_posts()) : $query->the_post();
-
-                    get_template_part('template-parts/components/post','card');
+                    get_template_part('template-parts/components/post-card');
 
                 endwhile;
-
                 wp_reset_postdata();
-
             endif;
+            ?>
 
-        ?>
+        </div>
 
     </div>
 
+</section>
 </section>

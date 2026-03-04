@@ -11,11 +11,14 @@ function actionlabs_theme_setup() {
     register_nav_menus(['primary' => 'Primary Menu']);
 
     add_theme_support('custom-logo', [
-    'height'      => 60,
-    'width'       => 200,
-    'flex-height' => true,
-    'flex-width'  => true,
-]);
+        'height'      => 60,
+        'width'       => 200,
+        'flex-height' => true,
+        'flex-width'  => true,
+    ]);
+
+    // Hero image size
+    add_image_size('hero-large', 1920, 800, true);
 
 }
 

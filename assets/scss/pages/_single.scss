@@ -1,0 +1,141 @@
+@use "../abstracts/variables" as *;
+
+.single-post {
+  background: $color-gray-light;
+  margin-bottom: 80px;
+}
+
+
+.post-container {
+
+  width: $container-width;
+  margin: -200px auto 0 auto; // sobe o card sobre o hero
+  position: relative;
+  z-index: 2;
+
+}
+.post-card-single {
+  width: 800px;
+  background: $color-white;
+  padding: 44px;
+  border-radius: 4px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.post-card-single__image {
+
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+}
+
+.post-card-single__category {
+
+  display: inline-block;
+
+  background: $color-primary;
+  color: $color-white;
+  background-color: #01758D;
+  text-transform: uppercase;
+
+  padding: 8px 16px;
+  border-radius: $border-radius-pill;
+
+  font-family: $font-primary;
+  font-size: 12px;
+
+  margin-bottom: 16px;
+
+}
+
+
+.post-card-single__title {
+
+  font-family: $font-primary;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: #525252;
+  margin: 10px 0;
+  text-transform: uppercase;
+
+}
+
+.post-card-single__author {
+
+  font-size: 12px;
+  color: #777;
+
+  margin-bottom: 20px;
+
+}
+
+.post-card-single__text {
+
+  font-family: $font-primary;
+  color: #525252;
+
+  p {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+
+    margin-bottom: 20px;
+
+  }
+
+   h2 {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+
+    margin-top: 40px;
+    margin-bottom: 16px;
+
+  }
+
+}
+
+.post-card-single__meta {
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  font-family: $font-primary;
+  font-size: 12px;
+
+  color: #8a8a8a;
+
+}
+
+.meta-date,
+.meta-tags {
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+}
+
+.meta-icon {
+
+  width: 14px;
+  height: 14px;
+
+  opacity: .7;
+
+}

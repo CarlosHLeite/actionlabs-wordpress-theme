@@ -1,0 +1,103 @@
+@use "../abstracts/variables" as *;
+
+.hero-home {
+
+  height: 420px;
+   background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__overlay {
+
+    width: 100%;
+    max-width: $container-width;
+
+    margin: 0 auto;
+    padding: 0 $container-padding-x;
+
+  }
+
+  &__title {
+
+    font-family: $font-primary;
+    font-size: 64px;
+    font-weight: 900;
+
+    color: $color-white;
+
+    line-height: 1.1;
+
+  }
+
+}
+
+
+/* ================================
+POST GRID
+================================ */
+.posts-grid-section{
+  background: $color-background;
+  padding-bottom: $spacing-lg;
+}
+
+.posts-grid {
+
+  width: 100%;
+  max-width: $container-width;
+
+  margin: -80px auto 80px auto;
+  padding: 0 $container-padding-x;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  justify-content: center;
+
+}
+
+
+/* ================================
+RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+
+  .hero-home {
+
+    height: 360px;
+
+    &__title {
+      font-size: 48px;
+    }
+
+  }
+
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .hero-home {
+
+    height: 300px;
+
+    &__title {
+      font-size: 36px;
+    }
+
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+    margin-top: -60px;
+  }
+
+}

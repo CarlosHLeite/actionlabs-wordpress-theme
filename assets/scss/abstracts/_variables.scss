@@ -5,7 +5,9 @@ COLORS
 $color-primary: #05CFFC;
 $color-white: #ffffff;
 $color-gray-light: #f3f3f3;
-
+$color-title: #01758D;
+$color-background: #F4F4F4;
+    
 
 /* ================================
 LAYOUT
@@ -23,6 +25,7 @@ SPACING
 
 $spacing-sm: 10px;
 $spacing-md: 20px;
+$spacing-lg: 30px;
 
 
 /* ================================
@@ -36,8 +39,17 @@ $border-radius-pill: 30px;
 TYPOGRAPHY
 ================================ */
 
+$font-primary: 'Roboto', sans-serif;
 $font-size-sm: 14px;
 $font-weight-semibold: 600;
+
+$font-size-xs: 11px;
+$line-height-xs: 14px;
+$font-weight-medium: 500;
+
+$font-size-xs-sm: 12px;
+$line-height-xs-sm: 16px;
+$font-weight-regular: 400;
 
 
 /* ================================

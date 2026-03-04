@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

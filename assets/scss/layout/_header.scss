@@ -11,11 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     max-width: $container-width;
     margin: 0 auto;
-    padding: 0 $container-padding-x;
-
     list-style: none;
   }
 
@@ -38,30 +35,3 @@
 
 }
 
-/* Button */
-
-.btn {
-
-  display: inline-block;
-
-  padding: $spacing-sm $spacing-md;
-
-  border-radius: $border-radius-pill;
-
-  font-size: $font-size-sm;
-  font-weight: $font-weight-semibold;
-
-  text-decoration: none;
-
-  transition: $transition-default;
-
-  &--primary {
-    background: $color-white;
-    color: $color-primary;
-
-    &:hover {
-      background: $color-gray-light;
-    }
-  }
-
-}
