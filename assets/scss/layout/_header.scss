@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as *;
+
+.site-header {
+  background: $color-primary;
+  padding: $header-padding-y 0;
+}
+
+.site-nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $container-padding-x;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+/* Logo */
+
+.site-logo {
+
+  img {
+    max-height: $logo-max-height;
+    width: auto;
+    display: block;
+  }
+
+}
+
+/* Button */
+
+.btn {
+
+  display: inline-block;
+
+  padding: $spacing-sm $spacing-md;
+
+  border-radius: $border-radius-pill;
+
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+
+  text-decoration: none;
+
+  transition: $transition-default;
+
+  &--primary {
+    background: $color-white;
+    color: $color-primary;
+
+    &:hover {
+      background: $color-gray-light;
+    }
+  }
+
+}

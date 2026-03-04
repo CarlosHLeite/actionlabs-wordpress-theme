@@ -1,0 +1,24 @@
+{
+  "name": "actionlabs-theme",
+  "version": "1.0.0",
+  "description": "Custom WordPress theme developed for the Action Labs technical test. Uses SCSS architecture and responsive layout.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass assets/scss/style.scss assets/css/main.css --watch",
+    "build": "sass assets/scss/style.scss assets/css/main.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosHLeite/actionlabs-wordpress-theme.git"
+  },
+  "keywords": [],
+  "author": "Carlos H. Leite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosHLeite/actionlabs-wordpress-theme/issues"
+  },
+  "homepage": "https://github.com/CarlosHLeite/actionlabs-wordpress-theme#readme",
+  "dependencies": {
+    "sass": "^1.97.3"
+  }
+}
