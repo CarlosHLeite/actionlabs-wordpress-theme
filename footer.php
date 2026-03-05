@@ -1,3 +1,20 @@
+<?php
+/**
+ * =================================
+ * FOOTER TEMPLATE
+ * =================================
+ *
+ * Responsável por renderizar o rodapé do site.
+ * Inclui:
+ * - Logo da empresa
+ * - Divisor visual
+ * - Copyright automático
+ *
+ *
+ * @package ActionLabsTheme
+ */
+?>
+
 <footer class="site-footer">
 
     <div class="container footer-container">

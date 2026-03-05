@@ -1,66 +1,43 @@
-/* ================================
-COLORS
-================================ */
 
+/* Colors */
 $color-primary: #05CFFC;
+$color-title: #01758D;
 $color-white: #ffffff;
 $color-gray-light: #f3f3f3;
-$color-title: #01758D;
 $color-background: #F4F4F4;
-    
 
-/* ================================
-LAYOUT
-================================ */
-
+/* Layout */
 $container-width: 1170px;
-
-$header-padding-y: 16px;
 $container-padding-x: 20px;
+$header-padding-y: 16px;
 
-
-/* ================================
-SPACING
-================================ */
-
+/* Spacing */
 $spacing-sm: 10px;
 $spacing-md: 20px;
 $spacing-lg: 30px;
 
-
-/* ================================
-BORDER
-================================ */
-
+/* Border */
 $border-radius-pill: 30px;
 
-
-/* ================================
-TYPOGRAPHY
-================================ */
-
+/* Typography */
 $font-primary: 'Roboto', sans-serif;
+
+/* Font Sizes */
+$font-size-xs: 11px;
+$font-size-xs-sm: 12px;
 $font-size-sm: 14px;
+
+/* Line Heights */
+$line-height-xs: 14px;
+$line-height-xs-sm: 16px;
+
+/* Font Weights */
+$font-weight-regular: 400;
+$font-weight-medium: 500;
 $font-weight-semibold: 600;
 
-$font-size-xs: 11px;
-$line-height-xs: 14px;
-$font-weight-medium: 500;
-
-$font-size-xs-sm: 12px;
-$line-height-xs-sm: 16px;
-$font-weight-regular: 400;
-
-
-/* ================================
-LOGO
-================================ */
-
+/* Logo */
 $logo-max-height: 40px;
 
-
-/* ================================
-ANIMATION
-================================ */
-
+/* Animation */
 $transition-default: all .25s ease;

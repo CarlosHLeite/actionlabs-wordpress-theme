@@ -1,19 +1,31 @@
 @use "../abstracts/variables" as *;
 
 .site-header {
+
   background: $color-primary;
-  padding: $header-padding-y 0;
+  padding: 12px 0;
+
 }
+
+/* ================================
+NAV
+================================ */
 
 .site-nav {
 
   &__list {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     max-width: $container-width;
     margin: 0 auto;
+
+    padding: 0 $container-padding-x;
+
     list-style: none;
+
   }
 
   &__item {
@@ -23,15 +35,51 @@
 
 }
 
-/* Logo */
+/* ================================
+LOGO
+================================ */
 
 .site-logo {
 
   img {
-    max-height: $logo-max-height;
+    max-height: 32px;
     width: auto;
     display: block;
   }
 
 }
 
+
+/* ================================
+HEADER BUTTON
+================================ */
+
+.site-header .button {
+
+  font-size: 12px;
+  padding: 6px 14px;
+
+  border-radius: $border-radius-pill;
+
+  display: inline-flex;
+  align-items: center;
+
+  height: 32px;
+
+}
+
+
+/* ================================
+RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+ .custom-logo {
+ 
+    width: 100px;
+    height: 22px;
+    margin: 0 auto;
+
+ }
+}

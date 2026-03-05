@@ -1,3 +1,24 @@
+<?php
+/**
+ * =================================
+ * SINGLE POST TEMPLATE
+ * =================================
+ *
+ * Template responsável por renderizar
+ * posts individuais do blog.
+ *
+ * Estrutura:
+ * - Hero section
+ * - Imagem destacada
+ * - Categoria e metadados
+ * - Título e autor
+ * - Conteúdo do post
+ *
+ *
+ * @package ActionLabsTheme
+ */
+?>
+
 <?php get_header(); ?>
 
 <main class="single-post">
@@ -39,7 +60,7 @@
                             18H5V10h14v10z"/>
                         </svg>
 
-                        <?php echo get_the_date(); ?>
+                        <?php echo esc_html(get_the_date()); ?>
 
                     </span>
 

@@ -5,32 +5,39 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  min-width: 97px;
-  height: 36px;
-
-  padding: 4px 8px;
-
+  min-width: 88px;
+  height: 32px;
+  padding: 4px 12px;
   border-radius: 100px;
-
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-
+  font-family: $font-primary;
+  font-weight: $font-weight-medium;
+  font-size: 11px;
+  line-height: 16px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-
-  transition: all .25s ease;
+  transition: $transition-default;
 
   &--primary {
+
     background: $color-white;
-    color: $color-primary;
+    color: $color-title;
 
     &:hover {
       background: $color-gray-light;
     }
+
+  }
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .btn {
+    min-width: 80px;
+    height: 30px;
+    padding: 4px 10px;
+    font-size: 10px;
   }
 
 }
